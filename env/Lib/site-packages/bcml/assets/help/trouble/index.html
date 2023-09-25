@@ -1,0 +1,1118 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../beware/">
+      
+      
+        <link rel="next" href="../LICENSE/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
+    
+    
+      
+        <title>Troubleshooting - BCML Help</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#troubleshooting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="BCML Help" class="md-header__button md-logo" aria-label="BCML Help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BCML Help
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Troubleshooting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BCML Help" class="md-nav__button md-logo" aria-label="BCML Help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    BCML Help
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        Installing Mods
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mods/" class="md-nav__link">
+        Managing Mods
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../export/" class="md-nav__link">
+        Exporting for Console
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bnp/" class="md-nav__link">
+        About BNPs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beware/" class="md-nav__link">
+        Do's and Dont's
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Troubleshooting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Troubleshooting
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problems-in-bcml" class="md-nav__link">
+    Problems in BCML
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems in BCML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bcml-is-installed-how-do-i-open-it" class="md-nav__link">
+    BCML is installed, how do I open it?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-get-an-unpacked-game-dump-to-use-with-bcml" class="md-nav__link">
+    How do I get an unpacked game dump to use with BCML?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-setup-my-game-folders-in-bcml" class="md-nav__link">
+    How do I setup my game folders in BCML?
+  </a>
+  
+    <nav class="md-nav" aria-label="How do I setup my game folders in BCML?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cemu" class="md-nav__link">
+    Cemu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-game" class="md-nav__link">
+    Base Game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlc" class="md-nav__link">
+    DLC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-are-there-no-language-options-to-choose-from" class="md-nav__link">
+    Why are there no language options to choose from?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-mods" class="md-nav__link">
+    Installing Mods
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing Mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-files-were-extracted" class="md-nav__link">
+    No files were extracted.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filenotfounderror-no-rulestxt-or-infojson-was-found-in-mod" class="md-nav__link">
+    FileNotFoundError: No rules.txt or info.json was found in mod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress-is-stuck-on-one-sec-forever" class="md-nav__link">
+    Progress is stuck on "One Sec" forever
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filenotfounderror-file-x-not-found-in-game-dump" class="md-nav__link">
+    FileNotFoundError: File X not found in game dump
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aamp-file-x-could-not-be-merged" class="md-nav__link">
+    AAMP file X could not be merged.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#there-was-an-error-installing-mod-it-processed-successfully-but-could-not-be-added-to-your-bcml-mods" class="md-nav__link">
+    There was an error installing MOD. It processed successfully, but could not be added to your BCML mods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valueerror-invalid-version-1-wiiu-expected-1-3" class="md-nav__link">
+    ValueError: Invalid version: 1-wiiu (expected 1-3)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-bnps" class="md-nav__link">
+    Creating BNPs
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating BNPs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-modified-files-were-found-this-means-the-mod-is-probably-not-in-a-supported-format" class="md-nav__link">
+    No modified files were found. This means the mod is probably not in a supported format.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-problems" class="md-nav__link">
+    Usage Problems
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bcml-takes-me-back-to-the-setup-wizard-each-time" class="md-nav__link">
+    BCML takes me back to the setup wizard each time.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-launch-game-button-doesnt-work" class="md-nav__link">
+    The "Launch Game" button doesn't work.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems-in-game" class="md-nav__link">
+    Problems In Game
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems In Game">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#botw-crashes-immediately-when-the-game-starts-to-load" class="md-nav__link">
+    BOTW crashes immediately when the game starts to load
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ive-installed-my-mods-in-bcml-but-they-dont-take-effect-in-cemu" class="md-nav__link">
+    I've installed my mods in BCML, but they don't take effect in Cemu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-installed-the-linkle-mod-and-it-kind-of-works-but-linkle-looks-mixed-with-link" class="md-nav__link">
+    I installed the Linkle mod, and it kind of works, but Linkle looks mixed with Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-items-added-by-my-mods-have-no-names-or-descriptions" class="md-nav__link">
+    New items added by my mod(s) have no names or descriptions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/embed/8gKRifYyA68" class="md-nav__link">
+        Tutorial Video
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Licenses
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Licenses
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LICENSE/" class="md-nav__link">
+        BCML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/7z/" class="md-nav__link">
+        7-Zip
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license/pywebview/" class="md-nav__link">
+        pywebview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problems-in-bcml" class="md-nav__link">
+    Problems in BCML
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems in BCML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bcml-is-installed-how-do-i-open-it" class="md-nav__link">
+    BCML is installed, how do I open it?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-get-an-unpacked-game-dump-to-use-with-bcml" class="md-nav__link">
+    How do I get an unpacked game dump to use with BCML?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-do-i-setup-my-game-folders-in-bcml" class="md-nav__link">
+    How do I setup my game folders in BCML?
+  </a>
+  
+    <nav class="md-nav" aria-label="How do I setup my game folders in BCML?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cemu" class="md-nav__link">
+    Cemu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-game" class="md-nav__link">
+    Base Game
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    Update
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlc" class="md-nav__link">
+    DLC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-are-there-no-language-options-to-choose-from" class="md-nav__link">
+    Why are there no language options to choose from?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-mods" class="md-nav__link">
+    Installing Mods
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing Mods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-files-were-extracted" class="md-nav__link">
+    No files were extracted.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filenotfounderror-no-rulestxt-or-infojson-was-found-in-mod" class="md-nav__link">
+    FileNotFoundError: No rules.txt or info.json was found in mod
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#progress-is-stuck-on-one-sec-forever" class="md-nav__link">
+    Progress is stuck on "One Sec" forever
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filenotfounderror-file-x-not-found-in-game-dump" class="md-nav__link">
+    FileNotFoundError: File X not found in game dump
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aamp-file-x-could-not-be-merged" class="md-nav__link">
+    AAMP file X could not be merged.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#there-was-an-error-installing-mod-it-processed-successfully-but-could-not-be-added-to-your-bcml-mods" class="md-nav__link">
+    There was an error installing MOD. It processed successfully, but could not be added to your BCML mods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valueerror-invalid-version-1-wiiu-expected-1-3" class="md-nav__link">
+    ValueError: Invalid version: 1-wiiu (expected 1-3)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-bnps" class="md-nav__link">
+    Creating BNPs
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating BNPs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-modified-files-were-found-this-means-the-mod-is-probably-not-in-a-supported-format" class="md-nav__link">
+    No modified files were found. This means the mod is probably not in a supported format.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-problems" class="md-nav__link">
+    Usage Problems
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bcml-takes-me-back-to-the-setup-wizard-each-time" class="md-nav__link">
+    BCML takes me back to the setup wizard each time.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-launch-game-button-doesnt-work" class="md-nav__link">
+    The "Launch Game" button doesn't work.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems-in-game" class="md-nav__link">
+    Problems In Game
+  </a>
+  
+    <nav class="md-nav" aria-label="Problems In Game">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#botw-crashes-immediately-when-the-game-starts-to-load" class="md-nav__link">
+    BOTW crashes immediately when the game starts to load
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ive-installed-my-mods-in-bcml-but-they-dont-take-effect-in-cemu" class="md-nav__link">
+    I've installed my mods in BCML, but they don't take effect in Cemu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-installed-the-linkle-mod-and-it-kind-of-works-but-linkle-looks-mixed-with-link" class="md-nav__link">
+    I installed the Linkle mod, and it kind of works, but Linkle looks mixed with Link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-items-added-by-my-mods-have-no-names-or-descriptions" class="md-nav__link">
+    New items added by my mod(s) have no names or descriptions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="troubleshooting">Troubleshooting</h1>
+<p><strong><em>Any time you have any problem with one or more mods in-game after installing them
+through BCML, the first thing you should try is using the Remerge button.</em></strong></p>
+<p>There are a lot of things that can go wrong trying to merge and manage mods for BOTW.
+Check here for some basic help for common problems.</p>
+<h2 id="problems-in-bcml">Problems in BCML</h2>
+<h3 id="setup">Setup</h3>
+<h4 id="bcml-is-installed-how-do-i-open-it">BCML is installed, how do I open it?</h4>
+<p>Run <code>bcml</code> from the command line. You can also create a shortcut on your desktop or in
+the Start Menu. On Windows, point it to <code>bcml.exe</code> in the Scripts folder where you
+installed Python.</p>
+<h4 id="how-do-i-get-an-unpacked-game-dump-to-use-with-bcml">How do I get an unpacked game dump to use with BCML?</h4>
+<p>Follow the instructions from <a href="https://zeldamods.org/wiki/Help:Dumping_games" target="_blank">this tutorial</a>.</p>
+<h4 id="how-do-i-setup-my-game-folders-in-bcml">How do I setup my game folders in BCML?</h4>
+<p>Here are the rules for the folders you need to set in BCML.</p>
+<p>(<em>Note</em>: If you use Cemu, BCML should automatically find your game folders when you
+select the Cemu folder. If it doesn't, you can find them by right-clicking the game in
+Cemu and clicking the buttons to open the game, update, and DLC folders. These will
+<em>not</em> be the exact folders you need but will be very close to them; read on to find out
+exactly what you'll need to do from there.)</p>
+<h5 id="cemu">Cemu</h5>
+<p>(Optional) Must be the folder which directly contains <code>Cemu.exe</code> and <code>settings.xml</code>. For
+some Cemu installations, this may be inside a folder named <code>BIN</code>.</p>
+<h5 id="base-game">Base Game</h5>
+<p><em>(Required)</em> Must be the root folder for the BOTW ROM, excluding the executable or meta.
+For Wii U/Cemu, this may be separate from Cemu's MLC storage, or, if it is, it will use
+the title ID that ends in <code>0</code>. You must pass BCML the <code>content</code> folder directly, e.g.
+<code>C:\Game Dumps\The Legend of Zelda Breath of the Wild [ALZE]\content</code>.</p>
+<p>For Switch, this will be the <code>romfs</code> folder under the base game title ID, e.g.
+<code>C:\Game Dumps\BOTW\01007EF00011E000\romfs</code>.</p>
+<p>You can tell this folder is set correctly if it contains the file
+<code>Pack/Dungeon000.pack</code>.</p>
+<h5 id="update">Update</h5>
+<p><em>(Required: Wii U)</em> Must be the root content folder for BOTW's update files, version
+1.5.0 for Wii U or 1.6.0 for Switch. For Cemu users, this should ordinarily be inside
+Cemu's MLC storage. For Cemu/Wii U, the first half of the title ID will end in the
+letter E. Example: <code>C:\Cemu\mlc01\usr\title\0005000E\101C9400\content</code></p>
+<p><em>Switch users should not need an update folder, because dumping will ordinarily merge the
+base game and update files.</em></p>
+<p>You can tell this folder is set correctly if it contains approximately 7000 files in the
+folder <code>Actor/Pack</code>.</p>
+<h5 id="dlc">DLC</h5>
+<p><em>(Optional)</em> Must be the folder containing the latest paid DLC files for BOTW. For Cemu
+users, this should ordinarily be inside Cemu's MLC storage. For Cemu/Wii U, the first
+half of the title ID will end in the letter C. Example (<em>make sure to include the
+<code>0010</code></em>): <code>C:\Cemu\mlc01\usr\title\0005000E\101C9400\content\0010</code></p>
+<p>For Switch, this will be the <code>romfs</code> folder under the supported DLC title ID, e.g.
+<code>C:\Game Dumps\BOTW\01007EF00011F001\romfs</code></p>
+<p>You can tell this folder is set correctly if it contains <code>Pack/AocMainField.pack</code>.</p>
+<h4 id="why-are-there-no-language-options-to-choose-from">Why are there no language options to choose from?</h4>
+<p>BCML populates the language options when you enter the correct Base Game folder. If
+you have no language options, check to make sure your game folder is set correctly
+and the entry line has a green checkmark.</p>
+<p>If you still have no language options, click inside the Base Game entry line, press 
+Ctrl+A to select the entire line, then press Ctrl+X and Ctrl+V to delete/re-enter the
+line and force another check for the languages.</p>
+<h3 id="installing-mods">Installing Mods</h3>
+<h4 id="no-files-were-extracted">No files were extracted.</h4>
+<p>This usually means the mod download is corrupt.</p>
+<h4 id="filenotfounderror-no-rulestxt-or-infojson-was-found-in-mod">FileNotFoundError: No <code>rules.txt</code> or <code>info.json</code> was found in mod</h4>
+<p>This one is as it says. BCML didn't find a recongized meta file in the mod you picked.
+BCML only supports graphic pack mods and BNPs (Switch: BNPs only). Other formats will
+need to be converted first.</p>
+<h4 id="progress-is-stuck-on-one-sec-forever">Progress is stuck on "One Sec" forever</h4>
+<p>This happens when somehow your system fails to check and load a mod's metadata for
+custom install options. I have never been able to reproduce this and can't say why
+it happens, except in some cases it can be caused by Unicode characters in the 7-Zip
+path.</p>
+<h4 id="filenotfounderror-file-x-not-found-in-game-dump">FileNotFoundError: File <code>X</code> not found in game dump</h4>
+<p>In most cases, this indicates that, despite BCML's attempts to check your folder
+settings to begin with, somehow the game dump, update data, or DLC folder you provided
+to BCML are incorrect. See the <a href="#why-wont-bcml-accept-my-folders">previous section</a> for
+help with folders. In rare cases it may relate to a mod that adds new files in a way or
+place that BCML does not anticipate.</p>
+<h4 id="aamp-file-x-could-not-be-merged">AAMP file <code>X</code> could not be merged.</h4>
+<p>Usually this means one of your mods has an outdated or broken file, often a <code>.bshop</code> file.
+Contact the mod creator for help. This <em>also</em> applies to the error "Shop file <code>X</code> appears
+to be missing a key."</p>
+<h4 id="there-was-an-error-installing-mod-it-processed-successfully-but-could-not-be-added-to-your-bcml-mods">There was an error installing MOD. It processed successfully, but could not be added to your BCML mods</h4>
+<p>If the full text of the error includes anything about XML, you probably either (1) have
+an old version of Cemu or (2) have a corrupt Cemu settings file. Make sure you have at
+least Cemu 1.15, and if you still have issues, try deleting <code>settings.xml</code> from the Cemu
+folder.</p>
+<h4 id="valueerror-invalid-version-1-wiiu-expected-1-3">ValueError: Invalid version: 1-wiiu (expected 1-3)</h4>
+<p>The mod you are trying to install contains a <a href="https://zeldamods.org/wiki/BYML">BYML</a>
+file (usually <code>ActorInfo.product.sbyml</code> ) that has been corrupted by an outdated BYML
+tool. The only solution to this is to <em>contact the mod creator for help</em> or to repair
+the file manually.</p>
+<h3 id="creating-bnps">Creating BNPs</h3>
+<h4 id="no-modified-files-were-found-this-means-the-mod-is-probably-not-in-a-supported-format">No modified files were found. This means the mod is probably not in a supported format.</h4>
+<p>If you haven't already looked, check the <a href="../bnp/">BNP help page</a> for help with the
+correct folder structure for a BNP mod. If it still doesn't work, make sure to check the
+casing of the folder names, as they are in fact case-sensitive (e.g. <code>content/Actor</code>
+works but <code>Content/actor</code> does not).</p>
+<p><em>Note that you will get this error if the foler structure is correct but you select the
+wrong folder when making the BNP.</em> For example, Switch users often rightly create a
+<code>01007EF00011E000/romfs</code> folder for their mod but then select the <code>romfs</code> folder when
+they should select the root folder that <em>contains</em> the title ID folder.</p>
+<h3 id="usage-problems">Usage Problems</h3>
+<h4 id="bcml-takes-me-back-to-the-setup-wizard-each-time">BCML takes me back to the setup wizard each time.</h4>
+<p>Your settings, probably the game folders, are incorrect. They need to be fixed first.</p>
+<h4 id="the-launch-game-button-doesnt-work">The "Launch Game" button doesn't work.</h4>
+<p>Usually, this happens if Cemu is set to run as administrator but BCML is not. To correct
+this, either turn off the administrator setting for Cemu (recommended, as it's actually
+useless in <em>most</em> cases) or run BCML as administrator.</p>
+<h2 id="problems-in-game">Problems In Game</h2>
+<p><strong><em>Any time you have any problem with one or more mods in-game after installing them
+through BCML, the first thing you should try is using the Remerge button.</em></strong></p>
+<h3 id="botw-crashes-immediately-when-the-game-starts-to-load">BOTW crashes <em>immediately</em> when the game starts to load</h3>
+<p>There are a few possible causes:</p>
+<ol>
+<li>You have mods installed outside of BCML that conflict with the BCML pack. <strong>Running
+   BCML alongside mods installed with other methods is not supported.</strong></li>
+<li>You still have the master graphic pack for BCML 2.8 enabled in Cemu after upgrading
+   (under <code>{BCML: DON'T TOUCH}</code>).</li>
+<li>Your load order is backwards or otherwise incorrect.</li>
+<li>Your game language in BCML does not match the region and language you use in BOTW.</li>
+<li>Your game directory settings in BCML are set incorrectly.</li>
+<li>There is something wrong with one of your mods itself.</li>
+<li>One or more of the mods you are using are incompatible with the others in game-breaking
+   ways even after merging.</li>
+<li>Your game dump is corrupt.</li>
+</ol>
+<h3 id="ive-installed-my-mods-in-bcml-but-they-dont-take-effect-in-cemu">I've installed my mods in BCML, but they don't take effect in Cemu</h3>
+<p>There are four common causes for this:</p>
+<ol>
+<li>You accidentally turned on the "Use BCML without a Cemu installation" setting.</li>
+<li>The BCML graphic pack is not enabled in Cemu. BCML attempts to enable it automatically,
+   but permissions issues can prevent this sometimes. Enable the pack in the Cemu graphic
+   pack menu at <code>The Legend of Zelda: Breath of the Wild/Mods/BCML</code>. In some rare cases,
+   you may need to restart both BCML and Cemu and remerge for this to work.</li>
+<li>Your Cemu folder is in OneDrive, which doesn't cooperate for some reason.</li>
+<li>You have a weird problem involving hard links and filesystem permissions, in which
+   turn on the "Disable hard links for master mod" setting.</li>
+</ol>
+<h3 id="i-installed-the-linkle-mod-and-it-kind-of-works-but-linkle-looks-mixed-with-link">I installed the Linkle mod, and it kind of works, but Linkle looks mixed with Link</h3>
+<p>This is usually a problem of mod priority. Try setting the Linkle mod to a higher
+priority than any mods that alter armour stats or other mods that affect <code>TitleBG.pack</code>.
+If you have already done so, try remerging. If it still doesn't work, it could be a more
+complicated problem with your mod configuration; consider clearing your mods and
+starting fresh.</p>
+<h3 id="new-items-added-by-my-mods-have-no-names-or-descriptions">New items added by my mod(s) have no names or descriptions</h3>
+<p>Check to make sure your region and language settings in BCML match your game, and then
+remerge.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4b2c34cd.min.js"></script>
+      
+    
+  </body>
+</html>

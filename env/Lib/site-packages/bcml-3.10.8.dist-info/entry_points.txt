@@ -1,0 +1,4 @@
+[console_scripts]
+bcml-debug=bcml.__main__:main_debug
+[gui_scripts]
+bcml=bcml.__main__:main
