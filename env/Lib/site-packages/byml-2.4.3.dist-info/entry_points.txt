@@ -1,0 +1,3 @@
+[console_scripts]
+byml_to_yml = byml.byml_to_yml:main
+yml_to_byml = byml.yml_to_byml:main

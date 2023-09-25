@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: botw-utils
+Version: 0.2.3
+Summary: Library containing various utilities for modding The Legend of Zelda: Breath of the Wild
+Home-page: https://github.com/NiceneNerd/botw-utils
+Author: NiceneNerd
+Author-email: macadamiadaze@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: xxhash (>=1.4)
+Requires-Dist: oead (>=1.0.0)
+
+# botw-utils
+A Python library containing various utilities for BOTW modding
+
+Documentation is available at the
+[GitHub pages site](https://nicenenerd.github.io/botw-utils/index.html)
+

@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=PtQiiknWUcI&list=PLVpVKIuNr7z34z9UFi8Amt39HZMC2uRxv&index=6&t=2181s 1:04:00
+
+{% extends 'main.html' %}
+{% block content %}
+    <h1>Home Template</h1>
+    <div>
+        <div>
+            {% for room in rooms %}
+                <div>
+                    <h5>{{ room.id }} -- <a href="{% url 'room' room.id %}">{{ room.name }}</a></h5>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
