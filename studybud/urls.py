@@ -5,7 +5,6 @@ from django.http import HttpResponse
 import base.views
 from base.views import home
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('base.urls')),
