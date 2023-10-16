@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import Room
 
 # Create your views here.
 
@@ -11,7 +12,8 @@ rooms = [
 
 
 def home(request):
-    context = {'rooms': rooms}
+    list_rooms = Room.objects.all()
+    context = {'rooms': list_rooms}
     return render(request, 'base/home.html', context)
 
 
