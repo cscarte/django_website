@@ -2,13 +2,14 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Room
 
+
 # Create your views here.
 
-rooms = [
-    {'id': 1, 'name': 'Lets learn Python!'},
-    {'id': 2, 'name': 'Design with me'},
-    {'id': 3, 'name': 'Frontend developers'},
-]
+# rooms = [
+#     {'id': 1, 'name': 'Lets learn Python!'},
+#     {'id': 2, 'name': 'Design with me'},
+#     {'id': 3, 'name': 'Frontend developers'},
+# ]
 
 
 def home(request):
@@ -22,9 +23,10 @@ def about(request):
 
 
 def room(request, pk):
-    var_room = None
-    for i in rooms:
-        if i['id'] == int(pk):
-            var_room = i
+    var_room = Room.objects.get(id=pk)
     context = {'room': var_room}
+    # for i in rooms:
+    #     if i['id'] == int(pk):
+    #         var_room = i
+    # context = {'room': var_room}
     return render(request, 'base/room.html', context)
