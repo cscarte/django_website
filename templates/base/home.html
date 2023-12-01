@@ -7,7 +7,10 @@ https://www.youtube.com/watch?v=PtQiiknWUcI&list=PLVpVKIuNr7z34z9UFi8Amt39HZMC2u
         <div>
             {% for room in rooms %}
                 <div>
+                    <span>@{{ room.host.username }}</span>
                     <h5>{{ room.id }} -- <a href="{% url 'room' room.id %}">{{ room.name }}</a></h5>
+                    <small>{{ room.topic.name }}</small>
+                    <hr>
                 </div>
             {% endfor %}
         </div>
