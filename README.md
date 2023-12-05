@@ -1,8 +1,4 @@
-# django_website
 
-Here is a github readme for a django website that you are building that is following along with the tutorial from the following youtube link: [https://www.youtube.com/watch?v=PtQiiknWUcI&list=PLVpVKIuNr7z34z9UFi8Amt39HZMC2uRxv&index=3](https://www.youtube.com/watch?v=PtQiiknWUcI&list=PLVpVKIuNr7z34z9UFi8Amt39HZMC2uRxv&index=3)
-
-## Github Readme for Django Website Tutorial
 
 This is a README file for a Django website built following the tutorial from the YouTube video [Python Django 7 Hour Course](https://www.youtube.com/watch?v=...) by Traversy Media.
 
