@@ -15,8 +15,8 @@ from .forms import RoomForm
 
 def home(request):
     list_rooms = Room.objects.all()
-    topic = Topic.objects.all()
-    context = {'rooms': list_rooms, 'topic': topic}
+    list_topics = Topic.objects.all()
+    context = {'rooms': list_rooms, 'topic': list_topics}
     return render(request, 'base/home.html', context)
 
 
@@ -47,11 +47,11 @@ def create_room(request):
 
 
 def update_room(request, pk):
-    room_update = Room.objects.get(id=pk)
+    room = Room.objects.get(id=pk)
     form = RoomForm(instance=room)
 
     if request.method == 'POST':
-        form = RoomForm(request.POST, instance=room_update)
+        form = RoomForm(request.POST, instance=room)
         if form.is_valid():
             form.save()
             return redirect('home')
