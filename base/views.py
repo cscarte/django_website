@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from .models import Room
+from .models import Room, Topic
 from .forms import RoomForm
 
 
@@ -15,7 +15,8 @@ from .forms import RoomForm
 
 def home(request):
     list_rooms = Room.objects.all()
-    context = {'rooms': list_rooms}
+    topic = Topic.objects.all()
+    context = {'rooms': list_rooms, 'topic': topic}
     return render(request, 'base/home.html', context)
 
 
@@ -46,11 +47,11 @@ def create_room(request):
 
 
 def update_room(request, pk):
-    room = Room.objects.get(id=pk)
+    room_update = Room.objects.get(id=pk)
     form = RoomForm(instance=room)
 
     if request.method == 'POST':
-        form = RoomForm(request.POST, instance=room)
+        form = RoomForm(request.POST, instance=room_update)
         if form.is_valid():
             form.save()
             return redirect('home')
@@ -60,8 +61,8 @@ def update_room(request, pk):
 
 
 def delete_room(request, pk):
-    room = Room.objects.get(id=pk)
+    room_delete = Room.objects.get(id=pk)
     if request.method == 'POST':
-        room.delete()
+        room_delete.delete()
         return redirect('home')
     return render(request, 'base/delete.html', {'object': room})
